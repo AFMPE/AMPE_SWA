@@ -1,0 +1,174 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+/* 
+Pallete 1
+Prussian Blue #0b3c5d
+Sky Blue #328cc1 rgb(50, 140, 193)
+Gold Leaf #d98310 (217, 131, 16)
+Ivory Black #1d2731
+
+Pallete 2
+Bossanova #47294c rgb(71, 41, 76)
+White lilac #faf4fc rgb(250, 244, 252)
+Black #010101
+Silver Rust #c3b9b7 rgb(195, 185, 183)
+Fedora #816f7d  rgb(129, 111, 125)
+*/
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+nav {
+    background-color: #47294c;
+    border-bottom: 5px solid #816f7d;
+}
+.nav-item {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+.carousel-inline-text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 999;
+    color: #faf4fc;
+    text-align: left;
+    width: 50%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 99;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(1,1,1, .8));
+  }
+
+ 
+
+.overlapped-row {
+    margin-top: -50px; 
+    position: relative;
+    z-index: 1;
+  }
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.soft-corners {
+    border-radius: 5px;
+}
+
+.bg-lilac {
+    background: #faf4fc;
+    color:#111;
+ }
+.bg-bossa {
+    background: #47294c;
+    color: #faf4fc;
+}
+
+.bg-to-fedora {
+    background: linear-gradient(to bottom, rgba(195, 185, 183), rgba(129, 111, 125, .5), rgba(129, 111, 125, 1));
+}
+
+.bg-fedora {
+    background: #816f7d;
+    color: #faf4fc;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: linear-gradient(to bottom, rgba(1,1,1, .8), rgba(1,1,1, .8));
+}
+.fostrap-logo {
+  width: 100px;
+  margin-bottom:15px
+}
+h1.heading {
+  color: #faf4fc;
+  font-size: 1.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  color: #505050;
+}
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 3.55em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.05em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 3.25em;
+    margin: 0 0 0.3em;
+  }
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #faf4fc;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
